@@ -63,7 +63,6 @@ export default function Header() {
                     <a href="#" onClick={toggleMenu}>Suporte</a>
                     <a href="#" onClick={toggleMenu}>Planos</a>
                     <a href="#" className={style.botao_geny_mobile}>
-                        {/* A imagem de perfil do Geny aqui. Usei o 'perfilGeny' importado */}
                         <img src={perfilGeny} alt="Perfil Geny" />
                         <span>GENY</span>
                     </a>
