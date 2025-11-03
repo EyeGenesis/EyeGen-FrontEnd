@@ -53,7 +53,7 @@ header {
                 height: 44px;
 
                 & .perfil_geny {
-                    background-image: url(../../assets/img/perfil_geny.png);
+                    background-image: url(../../assets/img/nav/perfil_geny.png);
                     background-size: cover;
                     background-position: center;
                     background-repeat: no-repeat;

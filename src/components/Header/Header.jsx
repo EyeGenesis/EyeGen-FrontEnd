@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import style from './Header.module.css';
-import logo from '../../assets/img/logo.ico';
-import perfilGeny from '../../assets/img/perfil_geny.png';
-import iconeIdioma from '../../assets/img/icone_idioma.png';
-import iconeComprar from '../../assets/img/icone_comprar.png';
+import logo from '../../assets/img/nav/logo.ico';
+import perfilGeny from '../../assets/img/nav/perfil_geny.png';
+
 
 export default function Header() {
     const [menuAberto, setMenuAberto] = useState(false);
