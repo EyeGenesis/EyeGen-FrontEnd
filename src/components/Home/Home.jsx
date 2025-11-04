@@ -4,8 +4,15 @@ import Hero from './Hero/Hero'
 export default function Home() {
 
     return (
-        <Hero />
+        <main>
+            <section className={style.home}>
+                <Hero />
+                <div className={style.eyegen_ajuda}>
+                    <h1>Como EYEGEN <br /> me ajuda?</h1>
+                </div>
+            </section>
+        </main>
     )
-    
+
 
 }

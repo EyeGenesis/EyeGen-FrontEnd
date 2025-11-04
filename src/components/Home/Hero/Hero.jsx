@@ -15,7 +15,7 @@ export default function Hero() {
                 <span>EYEGEN</span>
                 <h1> Inteligência que <br /> guia seus passos</h1>
                 <button>Já sou cliente</button>
-                <p>---------------------</p>
+                <div className={style.barra}></div>
             </div>
 
         </section>
