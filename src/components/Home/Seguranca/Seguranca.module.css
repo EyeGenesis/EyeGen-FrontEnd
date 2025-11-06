@@ -1,0 +1,94 @@
+.secaoSeguranca {
+  background-color: #ff4d6d;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.conteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tituloPrincipal {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.gradeCards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagemContainer {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  line-height: 0;
+}
+
+.imagemContainer img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+}
+
+.cartao h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+.cartao p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.linksRodape {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.linksRodape a {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.linksRodape a:hover {
+  text-decoration: none;
+}
+
+/* - responsividade - */
+
+@media (max-width: 768px) {
+  .secaoSeguranca {
+    padding: 3rem 1.5rem;
+  }
+
+  .tituloPrincipal {
+    font-size: 2rem;
+  }
+
+  .gradeCards {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .cartao h3 {
+    font-size: 1.5rem;
+  }
+}
