@@ -5,6 +5,7 @@ import InfoMascote from "./InfoMascote/InfoMascote";
 import NossoProduto from "./NossoProduto/NossoProduto";
 import QuemUsa from "./QuemUsa/QuemUsa";
 import Comunidade from "./Comunidade/Comunidade";
+import Apoiadores from "./Apoiadores/Apoiadores";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <NossoProduto />
         <QuemUsa />
         <Comunidade />
+        <Apoiadores />
       </section>
     </main>
   );
