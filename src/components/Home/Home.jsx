@@ -6,6 +6,7 @@ import NossoProduto from "./NossoProduto/NossoProduto";
 import QuemUsa from "./QuemUsa/QuemUsa";
 import Comunidade from "./Comunidade/Comunidade";
 import Apoiadores from "./Apoiadores/Apoiadores";
+import Contribuicao from "./Contribuicao.jsx/Contribuicao";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <QuemUsa />
         <Comunidade />
         <Apoiadores />
+        <Contribuicao />
       </section>
     </main>
   );
