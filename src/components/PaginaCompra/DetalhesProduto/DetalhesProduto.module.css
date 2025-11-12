@@ -1,0 +1,55 @@
+.container {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.avaliacoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.estrelas {
+  color: #FFD700;
+  font-size: 16px;
+  display: flex;
+  gap: 2px;
+}
+
+.numAvaliacoes {
+  color: #999;
+  font-size: 14px;
+}
+
+.preco {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin: 15px 0 0 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 24px;
+  }
+  
+  .preco {
+    font-size: 24px;
+  }
+}

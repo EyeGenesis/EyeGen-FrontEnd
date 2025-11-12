@@ -1,0 +1,53 @@
+.container {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 14px;
+}
+
+.cores {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btnCor {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0;
+}
+
+.btnCor:hover {
+  transform: scale(1.15);
+}
+
+.btnCor:active {
+  transform: scale(0.95);
+}
+
+.corSelecionada {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #333 !important;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .cores {
+    gap: 10px;
+  }
+  
+  .btnCor {
+    width: 28px;
+    height: 28px;
+  }
+}

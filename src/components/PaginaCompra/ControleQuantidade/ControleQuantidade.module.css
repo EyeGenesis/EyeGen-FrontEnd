@@ -1,0 +1,63 @@
+.container {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
+  font-size: 14px;
+}
+
+.controle {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: fit-content;
+  background: white;
+}
+
+.btnQuantidade {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.btnQuantidade:hover {
+  color: #333;
+  transform: scale(1.2);
+}
+
+.btnQuantidade:active {
+  transform: scale(0.9);
+}
+
+.quantidade {
+  min-width: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+  user-select: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .controle {
+    padding: 6px 12px;
+  }
+}
