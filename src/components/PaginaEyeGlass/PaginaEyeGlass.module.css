@@ -1,0 +1,57 @@
+.container-pagina {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  padding-inline: 60px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #f5fbff;
+}
+
+.conteudo-principal {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Responsividade */
+
+/* notebook 1200px */
+@media (max-width: 1200px) {
+  .container-pagina {
+    padding-inline: 40px;
+  }
+
+  .conteudo-principal {
+    gap: 30px;
+  }
+}
+
+/* tablet 1024px */
+@media (max-width: 1024px) {
+  .conteudo-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+}
+
+/* celular moderno 600px */
+@media (max-width: 600px) {
+  .container-pagina {
+    padding-inline: 20px;
+    padding-bottom: 80px;
+  }
+}
+
+/* celular pequeno 430px */
+@media (max-width: 430px) {
+  .container-pagina {
+    padding-inline: 16px;
+  }
+
+  .conteudo-principal {
+    gap: 40px;
+  }
+}

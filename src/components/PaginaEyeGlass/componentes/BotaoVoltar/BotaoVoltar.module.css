@@ -1,0 +1,39 @@
+.botao-voltar {
+  /* Alinhado à esquerda */
+  align-self: flex-start;
+
+  /* Ajuste de distância do Header */
+  margin-top: 20px;
+  margin-bottom: 24px;
+
+  /* Tamanho do botão */
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  background-color: #ffffff;
+
+  /* Sombra mais forte (pedido seu) */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.20);
+
+  /* Centraliza o ícone dentro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ícone dentro do botão */
+.icone-voltar {
+  width: 22px;
+  height: 22px;
+}
+
+/* Efeito suave no hover */
+.botao-voltar:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.28);
+}

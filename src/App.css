@@ -9,3 +9,11 @@ html, body {
     overflow-x: hidden;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5fbff; /* um cinza bem clarinho como no layout */
+}

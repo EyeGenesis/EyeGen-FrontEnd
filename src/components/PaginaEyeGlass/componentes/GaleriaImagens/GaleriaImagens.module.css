@@ -1,0 +1,121 @@
+/* Área principal da galeria */
+.area-imagem {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CAIXA FIXA DA IMAGEM PRINCIPAL */
+.imagem-destaque {
+  width: 800px;     /* SEMPRE FIXO */
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden; /* impede imagem de fugir */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-destaque img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* mantém proporção */
+}
+
+/* MINIATURAS */
+.lista-miniaturas {
+  margin-top: 24px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+/* QUADRADO FIXO DA MINIATURA */
+.miniatura {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  overflow: hidden; /* faz a imagem ficar presa no quadrado */
+  transition: all 0.2s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* IMAGEM DENTRO DA MINIATURA */
+.miniatura img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche o quadrado */
+}
+
+/* SELECIONADA */
+.miniatura-selecionada {
+  border-color: #000;
+}
+
+.miniatura:hover {
+  transform: scale(1.05);
+}
+
+/* responsividade */
+
+/* notebook 1200px */
+@media (max-width: 1200px) {
+  .imagem-destaque {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+/* tablet 1024px */
+@media (max-width: 1024px) {
+  .area-imagem {
+    margin-bottom: 30px;
+  }
+
+  .imagem-destaque {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* celualr moderno ≤ 600px */
+@media (max-width: 600px) {
+  .imagem-destaque {
+    width: 300px;
+    height: 300px;
+  }
+
+  .lista-miniaturas {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .miniatura {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* celular pequeno 430px */
+@media (max-width: 430px) {
+  .imagem-destaque {
+    width: 250px;
+    height: 250px;
+  }
+
+  .miniatura {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lista-miniaturas {
+    gap: 10px;
+  }
+}
