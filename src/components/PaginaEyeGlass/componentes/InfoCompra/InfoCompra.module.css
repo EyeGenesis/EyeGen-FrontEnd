@@ -1,3 +1,4 @@
+/* Importando diretamente aqui pois no App.css estava dando erro */
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@250;400;600&display=swap');
 
 .container-compra {
@@ -29,7 +30,6 @@
   font-size: 25px;
 }
 
-/* AVALIAÇÃO */
 .avaliacao {
   display: flex;
   justify-content: center;
@@ -51,13 +51,10 @@
 .numero-avaliacoes {
   color: #666;
   font-size: 14px;
-  font-family: inherit !important;
 }
 
 .preco {
-  font-family: inherit !important;
   font-size: 28px;
-  font-weight: inherit !important;
   text-align: center;
   margin-top: 5px;
 }

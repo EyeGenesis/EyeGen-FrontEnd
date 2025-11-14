@@ -9,15 +9,9 @@ export default function PaginaEyeGlass() {
   return (
     <main className={styles['container-pagina']}>
 
-      {/* Botão de voltar */}
       <BotaoVoltar />
-
       <section className={styles['conteudo-principal']}>
-
-        {/* Área esquerda */}
-        { <GaleriaImagens /> }
-
-        {/* Área direita */}
+      { <GaleriaImagens /> }
       { <InfoCompra />}
 
       </section>

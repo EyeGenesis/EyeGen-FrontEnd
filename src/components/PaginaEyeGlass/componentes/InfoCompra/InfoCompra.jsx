@@ -36,13 +36,13 @@ export default function InfoCompra() {
   return (
     <div className={styles["container-compra"]}>
 
-      {/* TÍTULO */}
+      {/* Titulo */}
       <h1 className={styles["titulo"]}>
         <span>EYE</span>
         Glass
       </h1>
 
-      {/* DESCRIÇÃO */}
+      {/* Descrição */}
       <p
         className={styles["descricao"]}
         style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 300 }}
@@ -50,7 +50,7 @@ export default function InfoCompra() {
         óculos inteligente de assistência visual, focado em aumentar a segurança e a autonomia do usuário
       </p>
 
-      {/* AVALIAÇÃO */}
+      {/* Avaliação */}
       <div className={styles["avaliacao"]}>
         <div className={styles["estrelas"]}>
           {[1,2,3,4,5].map(i => (
@@ -91,7 +91,7 @@ export default function InfoCompra() {
         </div>
       </div>
 
-      {/* QUANTIDADE */}
+      {/* Quantidade */}
       <div className={styles["quantidade-container"]}>
         <p className={styles["label"]}>Quantidade</p>
 
@@ -121,9 +121,9 @@ export default function InfoCompra() {
         ))}
       </div>
 
-      {/* BOTÕES */}
+      {/* Botoes */}
       <button className={styles["botao-cartao"]}>Adicionar Cartão</button>
-      <button className={styles["botao-comprar"]}>Confirmar Compra!</button>
+      <button className={styles["botao-comprar"]}>Confirmar Compra</button>
 
     </div>
   );

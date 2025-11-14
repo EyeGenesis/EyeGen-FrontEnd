@@ -15,7 +15,7 @@ export default function GaleriaImagens() {
   return (
     <div className={styles['area-imagem']}>
 
-      {/* IMAGEM PRINCIPAL */}
+      {/* Imagem princiapl */}
       <div className={styles['imagem-destaque']}>
         <img
           src={imagens[selecionada]}
