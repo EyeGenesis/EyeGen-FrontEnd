@@ -7,7 +7,8 @@ import 'swiper/css/pagination';
 import { FaPlayCircle, FaPlus } from 'react-icons/fa';
 import thumbVideo1 from '../../../assets/primeiro-acesso.png';
 import thumbVideo2 from '../../../assets/ia.png'; 
-import thumbVideo3 from '../../../assets/funcionalidades.jpg'; 
+import thumbVideo3 from '../../../assets/funcionalidades.jpg';
+import suporteTransicao from "../../../assets/suporte-transition.png";
 
 const guias = [
   {
@@ -30,6 +31,7 @@ const guias = [
 const GuiasDeUso = () => {
   return (
     <section className={estilos.secaoGuias}>
+  
       <div className={estilos.container}>
         
         <h2 className={estilos.tituloPrincipal}>Guias de Uso</h2>
@@ -40,13 +42,13 @@ const GuiasDeUso = () => {
         <Swiper
           modules={[Pagination, FreeMode]}
           className={estilos.swiperContainer}
-          spaceBetween={20}       // Espaço entre os slides
-          slidesPerView={'auto'}  // Largura automática (definida no CSS)
-          centeredSlides={true}   // Centraliza o slide ativo
-          freeMode={true}         // Deslize livre
+          spaceBetween={20}      
+          slidesPerView={'auto'} 
+          centeredSlides={true}  
+          freeMode={true}       
           pagination={{
-            clickable: true, // Permite clicar nas "pílulas"
-            el: `.${estilos.swiperPagination}`, // Conecta ao nosso div de paginação
+            clickable: true, 
+            el: `.${estilos.swiperPagination}`
           }}
         >
           {guias.map((guia) => (

@@ -20,11 +20,12 @@
 }
 
 .chipFiltro {
-  background-color: #ffffff;
+  background-color: #E2E4E9;
   color: #333;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   font-weight: 500;
+  font-size: 2rem;
   width: fit-content;
   margin: 0 auto 2.5rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -40,7 +41,6 @@
   width: 80% !important;
   max-width: 700px !important;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.6;
   transform: scale(0.9);
 }
 
