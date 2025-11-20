@@ -32,7 +32,7 @@ export default function Header() {
 
         <div className={style.nav_direita}>
           <a href="#"> &#127760; PT-BR</a>
-          <a href="/comprar">Comprar</a>
+          <Link to="/comprar">Comprar</Link>
           <Link to="/planos">Planos</Link>
           <Link to="/entrar">Entrar</Link>
 
