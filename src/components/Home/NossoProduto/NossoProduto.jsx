@@ -11,6 +11,7 @@ import designProduto from "../../../assets/img/design-produto.mp4";
 import cameraProduto from "../../../assets/img/camera-produto.mp4";
 import bateriaProduto from "../../../assets/img/bateria-produto.mp4";
 import materialProduto from "../../../assets/img/material-produto.png";
+import { Link } from "react-router-dom";
 
 const NossoProduto = () => {
   return (
@@ -18,9 +19,9 @@ const NossoProduto = () => {
       <div className={estilos.containerTitulo}>
         <h2>Sobre Nosso Produto</h2>
         <p>Tranforme seu dia a dia com autonomia e segurança</p>
-        <a href="#" className={estilos.botaoComprar}>
+        <Link to="/comprar" className={estilos.botaoComprar}>
           Comprar Agora <FaArrowRight size={14} />
-        </a>
+        </Link>
       </div>
       <div className={estilos.gradeCards}>
         <article className={`${estilos.cartao} ${estilos.cartaoGrande}`}>
