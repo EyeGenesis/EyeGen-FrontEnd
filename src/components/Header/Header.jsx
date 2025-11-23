@@ -34,7 +34,7 @@ export default function Header() {
           <a href="#"> &#127760; PT-BR</a>
           <Link to="/comprar">Comprar</Link>
           <Link to="/planos">Planos</Link>
-          <Link to="/login">Entrar</Link>
+          <Link to="/cadastre-se">Entrar</Link>
 
           <button className={style.cadastrar}>
             <Link to="/cadastre-se">Cadastre-se</Link>

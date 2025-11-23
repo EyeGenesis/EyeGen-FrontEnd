@@ -1,9 +1,9 @@
 .fundo {
   min-height: 100vh;
-  background-color: #76B2FF;
+  background-color: #76b2ff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;    
+  padding: 40px 20px;
   box-sizing: border-box;
 }

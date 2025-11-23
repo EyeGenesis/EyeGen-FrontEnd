@@ -1,47 +1,50 @@
-/* Importação das fontes */
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* --- FONTES --- */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-
-/* Fundo da página */
-.fundo {
+/* --- WRAPPER DA PÁGINA (FUNDO AZUL E CENTRALIZAÇÃO) --- */
+.pageWrapper {
   min-height: 100vh;
-  background-color: #76B2FF;
+  width: 100vw;
+  background-color: #76b2ff;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0;
-  overflow: hidden;
+  align-items: center; /* Mantém centralizado */
+
+  /* ADICIONE ISSO: */
+  padding-top: 80px; /* Empurra tudo para baixo */
+  padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
-/* Card principal */
+/* --- CARD PRINCIPAL (BRANCO) --- */
 .card {
   display: flex;
   width: 100%;
   max-width: 1400px;
-  height: 760px;
+  min-height: 720px;
+  height: auto;
   background: #fff;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-  align-items: center;
+  position: relative; /* Para posicionar o botão voltar */
 }
 
-
-/* Coluna esquerda */
+/* --- COLUNA ESQUERDA --- */
 .colEsquerda {
   flex: 1;
-  padding: 50px 50px 50px 160px;
+  padding: 40px 50px 40px 100px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   max-width: 850px;
 }
 
-
-/* Área do logo */
+/* LOGO */
 .logoArea {
   display: flex;
   align-items: center;
@@ -54,23 +57,35 @@
 }
 
 .logoTexto {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: 600;
   font-size: 26px;
   color: #000;
 }
 
-
-/* Título */
+/* TEXTOS */
 .bemVindo h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 28px;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 5px 0;
   color: #000;
 }
 
-/* Abas (Entrar / Cadastre-se) */
+.subTexto {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: #000;
+  margin: 0;
+}
+
+.subTexto a {
+  text-decoration: none;
+  color: #1e7bff;
+  font-weight: 500;
+}
+
+/* ABAS */
 .tabs {
   display: flex;
   width: 100%;
@@ -78,7 +93,7 @@
   border: 2px solid #000;
   border-radius: 40px;
   padding: 1px;
-  overflow: hidden;
+  margin-bottom: 5px;
 }
 
 .tab {
@@ -87,8 +102,9 @@
   font-size: 15px;
   background: transparent;
   border: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .active {
@@ -97,7 +113,7 @@
   border-radius: 30px;
 }
 
-/* Área dos inputs */
+/* INPUTS */
 .inputsArea {
   display: flex;
   flex-direction: column;
@@ -109,7 +125,6 @@
 .inputGroup {
   width: 100%;
   position: relative;
-  max-width: 400px;
 }
 
 .input {
@@ -119,10 +134,11 @@
   border: 2px solid #cfcfcf;
   border-radius: 40px;
   outline: none;
+  box-sizing: border-box;
 }
 
 .input:focus {
-  border-color: #7A7A7A;
+  border-color: #7a7a7a;
 }
 
 .icon {
@@ -130,33 +146,52 @@
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
 }
 
 .icon img {
   width: 20px;
-  opacity: 0.85;
+  opacity: 0.6;
 }
 
-/* Botão entrar */
+/* BOTÕES */
 .botaoEntrar {
   width: 100%;
   max-width: 400px;
-  padding: 12px 0;
-  background-color: #7C3AED;
+  padding: 14px 0;
+  background-color: #7c3aed; /* Roxo */
   color: white;
   border: none;
   border-radius: 40px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
 }
 
 .botaoEntrar:hover {
-  background-color: #6A2ED3;
+  background-color: #6a2ed3;
 }
 
-/* Divisor entre login e social */
+/* Estilo azul para o cadastro */
+.btnBlue {
+  background-color: #1e7bff !important;
+}
+.btnBlue:hover {
+  background-color: #1667d6 !important;
+}
+
+/* ERRO */
+.erro {
+  color: #ff2d2d;
+  font-size: 14px;
+  text-align: center;
+  margin-top: -5px;
+}
+
+/* SOCIAL */
 .divisor {
   display: flex;
   align-items: center;
@@ -164,7 +199,7 @@
   gap: 18px;
   width: 100%;
   max-width: 400px;
-  margin: 0 0 5px 0;
+  margin: 10px 0;
 }
 
 .divisor::before,
@@ -172,92 +207,74 @@
   content: "";
   flex: 1;
   height: 1px;
-  background: #000;
+  background: #cfcfcf;
 }
 
 .divisor span {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13.5px;
-  color: #000;
+  color: #555;
 }
 
-.divisor span strong {
-  font-weight: 600;
-}
-
-/* Botões sociais */
 .botaoSocial {
   width: 100%;
   max-width: 400px;
-  height: 40px;
-  padding: 0;
+  height: 42px;
   background: #fff;
-  border: 1.8px solid #CFCFCF;
+  border: 1.8px solid #cfcfcf;
   border-radius: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-family: 'Roboto', sans-serif;
+  gap: 10px;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #000;
   cursor: pointer;
-  transition: background-color .2s ease, transform .15s ease, box-shadow .15s ease;
-  margin-top: -4px;
-}
-
-.botaoSocial img {
-  width: 17px;
-  height: 17px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
 }
 
 .botaoSocial:hover {
-  background-color: #f3f3f3;
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  background-color: #f8f8f8;
+  transform: scale(1.02);
 }
 
-
-/* Botão Apple */
 .apple {
   background: #000;
   color: #fff;
+  border-color: #000;
 }
-
 .apple img {
   filter: brightness(0) invert(1);
 }
-
 .apple:hover {
   background: #1a1a1a;
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-
-/* Coluna da imagem da direita */
+/* COLUNA DIREITA (IMAGEM) */
 .colDireita {
-  width: 95%;
-  height: 95%;
   flex: 1;
   display: flex;
   align-items: center;
-  padding-right: 30px;
   justify-content: center;
+  padding: 20px 30px 20px 0;
   background: linear-gradient(180deg, #f7f7f7, #ececec);
 }
 
 .imagemDireita {
   width: 100%;
   height: 100%;
+  max-height: 680px;
   object-fit: cover;
   border-radius: 22px;
 }
 
+/* BOTÃO VOLTAR */
 .botaoVoltar {
   position: absolute;
-  top: 22px;
-  left: 22px;
+  top: 30px;
+  left: 30px;
   z-index: 20;
 }
 
@@ -271,52 +288,49 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.botaoVoltar img {
-  width: 20px;
-  height: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s;
 }
 
 .botaoVoltar button:hover {
-  transform: scale(1.20);
-  transition: transform 0.18s ease;
+  transform: scale(1.1);
 }
 
-
-/* Responsividade para telas até 1200px */
+/* RESPONSIVIDADE */
 @media (max-width: 1200px) {
-
   .colEsquerda {
-    padding: 40px 40px 40px 100px;
+    padding: 40px 40px 40px 60px;
   }
-
   .logo {
     width: 75px;
   }
-
-  .card {
-    height: 680px;
-  }
 }
 
-
-/* Responsividade para tablets */
 @media (max-width: 900px) {
-
   .card {
     flex-direction: column;
     height: auto;
   }
-
   .colEsquerda {
-    padding: 40px;
+    padding: 40px 20px;
     max-width: 100%;
     align-items: center;
     text-align: center;
+    order: 2;
   }
-
+  .logoArea {
+    margin-bottom: 10px;
+  }
+  .colDireita {
+    width: 100%;
+    height: 280px;
+    padding: 0;
+    order: 1;
+  }
+  .imagemDireita {
+    border-radius: 0;
+    max-height: none;
+  }
   .tabs,
   .inputsArea,
   .botaoEntrar,
@@ -325,49 +339,18 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .colDireita {
-    width: 100%;
-    height: 260px;
-    padding-right: 0;
-  }
-
-  .imagemDireita {
-    border-radius: 0;
-  }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 600px) {
-
-  .fundo {
-    padding: 20px;
+  .pageWrapper {
+    padding: 10px;
   }
-
   .colEsquerda {
-    padding: 25px;
-    gap: 18px;
-    text-align: center;
+    padding: 30px 20px;
   }
-
-  .logoArea {
-    justify-content: center;
-  }
-
   .bemVindo h2 {
     font-size: 22px;
   }
-
-  .input {
-    padding: 12px 45px 12px 16px;
-    font-size: 13.5px;
-  }
-
-  .botaoEntrar {
-    font-size: 15px;
-    padding: 11px 0;
-  }
-
   .colDireita {
     height: 200px;
   }
