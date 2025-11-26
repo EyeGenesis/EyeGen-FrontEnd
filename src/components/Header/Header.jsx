@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [ouvindo, setOuvindo] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuAberto(!menuAberto);
-  };
+    const toggleMenu = () => {
+        setMenuAberto(!menuAberto);
+    };
 
   return (
     <header>

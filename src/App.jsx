@@ -8,6 +8,7 @@ import Suporte from "./components/Suporte/Suporte.jsx";
 import EspecProduto from "./components/EspecProduto/EspecProduto.jsx";
 import Cadastro from "./components/Cadastro/Cadastro.jsx";
 import SobreNos from "./components/SobreNos/SobreNos.jsx";
+import Chatbot from "./components/Chatbot/Chatbot.jsx";
 import "./App.css";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/cadastre-se" element={<Cadastro />} />
       </Routes>
       <Footer />
+      <Chatbot />
     </>
   );
 }
