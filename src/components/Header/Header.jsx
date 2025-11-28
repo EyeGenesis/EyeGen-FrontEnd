@@ -61,29 +61,17 @@ export default function Header() {
 
         <div className={style.menu_mobile_botoes_topo}>
           <button className={style.cadastrar_mobile}>
-            <a href="#">Cadastre-se</a>
+            <Link to="/cadastre-se">Cadastre-se</Link>
           </button>
-          <a href="#" className={style.entrar_mobile}>
-            Entrar
-          </a>
+            <Link to="/login" className={style.entrar_mobile}>Entrar</Link>
         </div>
 
         <div className={style.menu_mobile_links}>
-          <a href="#" onClick={toggleMenu}>
-            Início
-          </a>
-          <a href="#" onClick={toggleMenu}>
-            Sobre Nós
-          </a>
-          <a href="#" onClick={toggleMenu}>
-            Comprar
-          </a>
-          <a href="#" onClick={toggleMenu}>
-            Suporte
-          </a>
-          <a href="#" onClick={toggleMenu}>
-            Planos
-          </a>
+          <Link to="/">Início</Link>
+          <Link to="/sobre-nos">Sobre nós</Link>
+          <Link to="/comprar">Comprar</Link>
+          <Link to="/suporte">Suporte</Link>
+          <Link to="/planos">Planos</Link>
           <a href="#" className={style.botao_geny_mobile}>
             <img src={perfilGeny} alt="Perfil Geny" />
             <span>GENY</span>
