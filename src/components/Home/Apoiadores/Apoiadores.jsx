@@ -5,16 +5,17 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import { FaArrowRight } from 'react-icons/fa';
 import logoSenac from '../../../assets/senac-logo.png';
-import logoProa from '../../../assets/proa-logo.png';
+import logoProa from '../../../assets/proa-logo.jpg';
 import logoCasasBahia from '../../../assets/cb-logo.png';
+import logoNavis from '../../../assets/logo_navis.jpeg'
 
 const apoiadores = [
   { id: 1, src: logoSenac, alt: 'Logo do Senac' },
   { id: 2, src: logoProa, alt: 'Logo do Instituto PROA' },
-  { id: 3, src: logoCasasBahia, alt: 'Logo da Fundação Casas Bahia' },
-  { id: 4, src: logoCasasBahia, alt: '' },
-  { id: 4, src: logoCasasBahia, alt: '' },
-  { id: 4, src: logoCasasBahia, alt: '' },
+  { id: 3, src: logoNavis, alt: 'Logo da Navis' },
+  { id: 4, src: logoSenac, alt: 'Logo do Senac' },
+  { id: 5, src: logoProa, alt: 'Logo do Instituto PROA' },
+  { id: 6, src: logoNavis, alt: 'Logo da Navis' },
 ];
 
 const Apoiadores = () => {
