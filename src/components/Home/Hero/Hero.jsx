@@ -1,9 +1,12 @@
 import style from "./Hero.module.css";
 import video from "../../../assets/videos/hero-home.mp4";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../../../contexto/ContextoLingua";
 
 export default function Hero() {
   const navigate = useNavigate();
+
+  const { t } = useLanguage();
 
   return (
     <section className={style.hero_home}>
@@ -15,14 +18,14 @@ export default function Hero() {
         <div className={style.barra}></div>
         <span>EYEGEN</span>
         <h1>
-          Inteligência que <br /> guia seus passos
+          {t.home.hero.titulo}
         </h1>
 
         <button
           className={style.botaoCliente}
           onClick={() => navigate("/login")}
         >
-          Já sou cliente
+          {t.home.hero.botao}
         </button>
 
         <div className={style.barra}></div>

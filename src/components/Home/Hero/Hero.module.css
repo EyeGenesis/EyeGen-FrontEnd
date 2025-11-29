@@ -70,6 +70,7 @@
             line-height: 1.2;
             margin-bottom: 24px;
             padding-right: 200px;
+            white-space: pre-line;
         }
 
         & button {
