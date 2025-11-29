@@ -111,10 +111,10 @@
 
         & .conteudo {
 
-            margin-top: 400px;
+            margin-top: 390px;
             padding: 60px 40px;
             border-radius: 40px;
-            text-align: center;            
+            text-align: center;
 
             & .barra {
                 margin-top: 20px;
@@ -140,5 +140,14 @@
 
         }
     }
-    
+
+}
+
+@media (max-width: 450px) {
+    .hero_home {
+        & .conteudo {
+            margin-top: 450px;
+            padding: 10px 20px;
+        }
+    }
 }

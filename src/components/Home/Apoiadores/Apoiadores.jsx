@@ -6,7 +6,6 @@ import 'swiper/css';
 import { FaArrowRight } from 'react-icons/fa';
 import logoSenac from '../../../assets/senac-logo.png';
 import logoProa from '../../../assets/proa-logo.jpg';
-import logoCasasBahia from '../../../assets/cb-logo.png';
 import logoNavis from '../../../assets/logo_navis.jpeg'
 
 const apoiadores = [
@@ -43,6 +42,7 @@ const Apoiadores = () => {
         >
           {apoiadores.map((apoiador) => (
             <SwiperSlide key={apoiador.id} className={estilos.swiperSlide}>
+              
               <div className={estilos.cartaoLogo}>
                 <img src={apoiador.src} alt={apoiador.alt} />
               </div>
