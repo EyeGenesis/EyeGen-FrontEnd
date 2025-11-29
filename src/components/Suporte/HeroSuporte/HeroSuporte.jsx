@@ -18,9 +18,7 @@ const HeroSuporte = () => {
         </p>
 
         <div className={estilos.buttonGroup}>
-          <Link to="/" className={`${estilos.botao} ${estilos.botaoPrimario}`}>
-            Pedir ajuda para Geny
-          </Link>
+  
           <Link
             to="/suporte"
             className={`${estilos.botao} ${estilos.botaoSecundario}`}
