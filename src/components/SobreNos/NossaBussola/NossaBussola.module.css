@@ -4,7 +4,6 @@
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   overflow: hidden;
-  height: 80vh;
 }
 
 .container {
@@ -14,7 +13,7 @@
 }
 
 .tituloPrincipal {
-  font-size: 3.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 3rem;
 }

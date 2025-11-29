@@ -3,8 +3,6 @@
   padding: 8rem 2rem;
   font-family: "Roboto", sans-serif;
   color: #000;
-  height: 80vh;
-  overflow: hidden;
 }
 
 .container {
@@ -75,7 +73,7 @@
 }
 
 .tituloWrapper h2 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
   color: #000;
@@ -102,13 +100,17 @@
   }
 
   .container {
-    flex-direction: column;
+    flex-direction:column-reverse;
     gap: 4rem;
   }
 
   .colunaTexto {
     max-width: 100%;
-    text-align: left;
+
+    & p{
+      font-size: 1.2rem;
+    }
+
   }
 
   .tituloWrapper {

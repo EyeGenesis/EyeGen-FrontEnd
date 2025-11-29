@@ -5,42 +5,52 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import {
-  FaPuzzlePiece,
-  FaGlobeAmericas,
-  FaHandsHelping,
-  FaHandHoldingHeart,
+
   FaArrowLeft,
   FaArrowRight,
 } from "react-icons/fa";
 
+import Criatividade from "../../../assets/criatividade.png";
+import ImpactoSocial from "../../../assets/impacto-social.png";
+import Inclusao from "../../../assets/inclusao.png";
+import Respeito from "../../../assets/respeito.png";
+import Colaboracao from "../../../assets/colaboracao.png";
+
 const valores = [
   {
     id: 1,
-    icon: <FaPuzzlePiece size={60} />,
+    icon: <img src={Criatividade} alt="Criatividade" width={65}/>,
     titulo: "Criatividade",
     texto:
       "Enxergamos possibilidades além do óbvio, explorando novas ideias e abordagens para criar soluções tecnológicas verdadeiramente transformadoras.",
   },
   {
     id: 2,
-    icon: <FaGlobeAmericas size={60} />,
+    icon: <img src={ImpactoSocial} alt="Impacto Social" width={65}/>,
     titulo: "Impacto Social",
     texto:
       "Criamos oportunidades para que todos ocupem seu espaço na sociedade, elevando a autoestima e impactando positivamente a vida de pessoas em situação de vulnerabilidade.",
   },
   {
     id: 3,
-    icon: <FaHandsHelping size={60} />,
+    icon: <img src={Inclusao} alt="Inclusão" width={65}/>,
     titulo: "Inclusão",
     texto:
       "Nosso foco é incluir pessoas com deficiência visual, independentemente de sua etnia. Por meio do nosso produto, buscamos ampliar seu espaço, sua voz e suas oportunidades na sociedade.",
   },
   {
     id: 4,
-    icon: <FaHandHoldingHeart size={60} />,
+    icon: <img src={Respeito} alt="Respeito" width={65}/>,
     titulo: "Respeito",
     texto:
       "Respeitamos cada indivíduo em sua essência, criando tecnologias que honram sua dignidade, fortalecem sua autonomia e atendem às suas necessidades com cuidado.",
+  },
+  {
+    id: 5,
+    icon: <img src={Colaboracao} alt="Colaboração" width={65}/>,
+    titulo: "Colaboração",
+    texto:
+      "Acreditamos que grandes avanços nascem do trabalho em conjunto, unindo diferentes perspectivas para desenvolver uma experiência segura, humana e eficaz para nossos usuários.",
   },
 ];
 

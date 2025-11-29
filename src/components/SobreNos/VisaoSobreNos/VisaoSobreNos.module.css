@@ -4,7 +4,6 @@
   font-family: "Roboto", sans-serif;
   color: #000;
   overflow: hidden;
-  height: 80vh;
 }
 
 .container {
@@ -29,7 +28,7 @@
 }
 
 .colunaTexto p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: #333;
   text-align: justify;
@@ -74,12 +73,15 @@
 
 /* --- responsividade --- */
 @media (max-width: 900px) {
+  .container{
+    flex-direction: column;
+  }
   .secaoVisao {
     padding: 4rem 1.5rem;
   }
 
   .colunaTexto p {
-    text-align: left;
+    font-size: 1.2rem;
   }
 
   .imageWrapper::before {
@@ -91,7 +93,7 @@
 
   .colunaTexto {
     max-width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .colunaImagem {
