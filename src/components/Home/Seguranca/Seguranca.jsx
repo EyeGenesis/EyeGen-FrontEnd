@@ -3,10 +3,10 @@ import estilos from "./Seguranca.module.css";
 import imagemHomem from "../../../assets/img/idoso-section.png";
 import imagemCrianca from "../../../assets/img/crianca-section.png";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../../contexto/ContextoLingua"; // Importar contexto
+import { useLanguage } from "../../../contexto/ContextoLingua"; 
 
 export default function Seguranca() {
-  const { t } = useLanguage(); // Usar hook
+  const { t } = useLanguage(); 
 
   return (
     <section className={estilos.secaoSeguranca}>

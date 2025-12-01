@@ -15,7 +15,7 @@ const InfoMascote = () => {
       <section className={estilos.secaoInformacao}>
         <div className={estilos.containerInfo}>
           <div className={estilos.gradeCards}>
-            {/* card 1: Sobre nós */}
+
             <article className={estilos.cartao}>
               <FaUsers size={40} className={estilos.icone} />
               <h3>{t.home.infoMascote.cards.sobre.titulo}</h3>
@@ -23,7 +23,7 @@ const InfoMascote = () => {
               <Link to="/sobre-nos">{t.home.infoMascote.cards.sobre.link}</Link>
             </article>
 
-            {/* card 2: Planos */}
+
             <article className={estilos.cartao}>
               <FaDollarSign size={40} className={estilos.icone} />
               <h3>{t.home.infoMascote.cards.planos.titulo}</h3>
@@ -31,7 +31,7 @@ const InfoMascote = () => {
               <Link to="/planos">{t.home.infoMascote.cards.planos.link}</Link>
             </article>
 
-            {/* card 3: Suporte */}
+  
             <article className={estilos.cartao}>
               <FaCogs size={40} className={estilos.icone} />
               <h3>{t.home.infoMascote.cards.suporte.titulo}</h3>
@@ -46,8 +46,6 @@ const InfoMascote = () => {
         <div className={estilos.containerMascote}>
           <div className={estilos.colunaTexto}>
             <h2>
-              {/* O título tem uma parte em negrito, ajustei para pegar a string toda, 
-                  mas se quiser manter o estilo, pode dividir no arquivo de tradução ou usar replace */}
               {t.home.infoMascote.mascote.titulo} 
             </h2>
             <p>{t.home.infoMascote.mascote.p1}</p>

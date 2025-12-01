@@ -12,7 +12,7 @@ import avatar4 from '../../../assets/avatar4.png';
 import avatar5 from '../../../assets/avatar5.png';
 import { useLanguage } from "../../../contexto/ContextoLingua";
 
-// Mapeamento de imagens para os IDs (já que o JSON de tradução não importa imagens)
+
 const avatarMap = {
   0: avatar1,
   1: avatar2,

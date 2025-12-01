@@ -139,6 +139,23 @@ export const translations = {
         texto: "Se identificou com nosso produto e gostaria de contribuir?",
         botao: "Saiba como"
       }
+    },
+
+    footer: {
+      titulo: "Fique atualizado",
+      inputPlaceholder: "Email",
+      colunas: {
+        produtos: "Produtos",
+        redes: "Redes Sociais",
+        duvidas: "Dúvidas",
+        sobre: "Sobre"
+      },
+      links: {
+        eyeglass: "Eyeglass",
+        planos: "Planos",
+        suporte: "Suporte",
+        sobreNos: "Sobre nós"
+      }
     }
   },
   en: {
@@ -279,6 +296,23 @@ export const translations = {
         titulo: "Contribute too",
         texto: "Identified with our product and would like to contribute?",
         botao: "Learn how"
+      }
+    },
+
+    footer: {
+      titulo: "Stay updated",
+      inputPlaceholder: "Email",
+      colunas: {
+        produtos: "Products",
+        redes: "Social Media",
+        duvidas: "Questions",
+        sobre: "About"
+      },
+      links: {
+        eyeglass: "Eyeglass",
+        planos: "Plans",
+        suporte: "Support",
+        sobreNos: "About us"
       }
     }
   }
