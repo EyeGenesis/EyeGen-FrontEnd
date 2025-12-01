@@ -174,6 +174,9 @@ export default function Header() {
         </div>
 
         <div className={style.menu_mobile_links}>
+          <a href="#" onClick={(e) => { e.preventDefault(); toggleLanguage(); }}> 
+             &#127760; {language === 'pt' ? 'PT-BR' : 'EN-US'}
+          </a>
           <Link to="/" onClick={fecharMenu}>{t.header.inicio}</Link>
           <Link to="/sobre-nos" onClick={fecharMenu}>{t.header.sobre}</Link>
           <Link to="/comprar" onClick={fecharMenu}>{t.header.comprar}</Link>
