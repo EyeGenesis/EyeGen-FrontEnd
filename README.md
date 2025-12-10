@@ -19,7 +19,7 @@
 No EyeGen, temos como principal propósito entregar uma plataforma **inclusiva**, permitindo que todos os usuários **naveguem de forma clara e facilitada**. O fluxo de navegação foi pensado especialmente para pessoas com deficiência visual, oferecendo uma **interface amigável, intuitiva e acessível para todas as idades.**
 
 **🔗 Conheça nosso site:**
-[Site do EyeGen](https://eyegen-indol.vercel.app/)
+[Site do EyeGen](https://www.eyegen.com.br)
 
 ## 💻 Tecnologias Utilizadas
 
