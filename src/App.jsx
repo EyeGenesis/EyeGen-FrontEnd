@@ -7,7 +7,11 @@ import Chatbot from "./components/Chatbot/Chatbot.jsx";
 import Loader from "./components/Loader/Loader.jsx";
 import Home from "./components/Home/Home.jsx";
 import PaginaEyeGlass from "./components/PaginaEyeGlass/PaginaEyeGlass.jsx";
+<<<<<<< HEAD
 import SobreNos from "./components/SobreNos/SobreNos.jsx";
+=======
+import Login from "./components/Login/Login.jsx";
+>>>>>>> d1c6561d3d4576f049dff08195a1173cabf06959
 import Planos from "./components/Planos/Planos.jsx";
 import Suporte from "./components/Suporte/Suporte.jsx";
 import EspecProduto from "./components/EspecProduto/EspecProduto.jsx";
@@ -44,10 +48,15 @@ function App() {
         <Route path="/comprar" element={<EspecProduto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastre-se" element={<Cadastro />} />
+<<<<<<< HEAD
         <Route path="*" element={<NotFound />} />
         <Route path="/fazer-pedido" element={<PaginaEyeGlass />} />
       </Routes>
 
+=======
+        <Route path="/fazer-pedido" element={<PaginaEyeGlass />} />
+      </Routes>
+>>>>>>> d1c6561d3d4576f049dff08195a1173cabf06959
       <Footer />
       <Chatbot />
     </>
