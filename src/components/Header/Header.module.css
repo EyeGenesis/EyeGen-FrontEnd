@@ -127,7 +127,7 @@ header {
         right: -100%;
         width: 85%;
         max-width: 350px;
-        height: 73%;
+        height: 550px;
         background-color: #000;
         z-index: 30;
         transition: right 0.4s ease-in-out;
