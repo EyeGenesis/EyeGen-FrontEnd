@@ -1,4 +1,4 @@
-
+/* Área principal da galeria */
 .area-imagem {
   flex: 2;
   display: flex;
@@ -6,36 +6,54 @@
   align-items: center;
 }
 
+/* CAIXA FIXA DA IMAGEM PRINCIPAL */
 .imagem-destaque {
-  width: 800px; 
+  width: 800px; /* SEMPRE FIXO */
   height: 500px;
   border-radius: 12px;
-  overflow: hidden; 
+  overflow: hidden; /* impede imagem de fugir */
+}
+
+.imagem-destaque {
+  width: 800px;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* IMAGEM PRINCIPAL */
 .imagem-destaque img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* mantém proporção */
+}
+
+/* MINIATURAS */
+<<<<<<< HEAD .imagem-destaque img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.lista-miniaturas {
+=======>>>>>>>d1c6561d3d4576f049dff08195a1173cabf06959 .lista-miniaturas {
   margin-top: 24px;
   display: flex;
   gap: 18px;
   justify-content: center;
 }
 
+/* QUADRADO FIXO DA MINIATURA */
 .miniatura {
   width: 80px;
   height: 80px;
   border-radius: 8px;
   border: 2px solid transparent;
   cursor: pointer;
-  overflow: hidden; 
+  overflow: hidden; /* faz a imagem ficar presa no quadrado */
+  overflow: hidden;
   transition: all 0.2s ease;
 
   display: flex;
@@ -43,6 +61,12 @@
   align-items: center;
 }
 
+/* IMAGEM DENTRO DA MINIATURA */
+.miniatura img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche o quadrado */
+}
 .miniatura img {
   width: 100%;
   height: 100%;

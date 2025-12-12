@@ -1,0 +1,299 @@
+/* Importando diretamente aqui pois no App.css estava dando erro */
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@250;400;600&display=swap');
+
+.container-compra {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 10px 20px;
+  background: none;
+}
+
+.titulo {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 250;
+}
+
+.titulo span {
+  font-weight: 800;
+}
+
+.descricao {
+  text-align: center;
+  margin-top: -10px;
+  line-height: 1.4;
+  color: #333;
+  font-size: 25px;
+}
+
+.avaliacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: -5px;
+}
+
+.estrelas {
+  display: flex;
+  gap: 4px;
+}
+
+.estrela {
+  width: 20px;
+  height: 20px;
+}
+
+.numero-avaliacoes {
+  color: #666;
+  font-size: 14px;
+}
+
+.preco {
+  font-size: 28px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.linha {
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  margin-top: 20px;
+}
+
+.label {
+  font-weight: 600;
+  font-family: inherit !important;
+}
+
+.secao {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cores {
+  display: flex;
+  gap: 12px;
+}
+
+.cor {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+.cor:hover {
+  transform: scale(1.12);
+}
+
+.cor-selecionada {
+  border-color: #000;
+}
+
+.quantidade-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.quantidade-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #999;
+  background-color: white;
+  border-radius: 20px;
+  padding: 6px 25px;
+  gap: 18px;
+}
+
+.quantidade-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: inherit !important;
+}
+
+.quantidade-btn:hover {
+  background-color: #f3f3f3;
+}
+
+.quantidade-numero {
+  font-size: 16px;
+  font-family: inherit !important;
+}
+
+.pagamentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pagamento-item {
+  border: 1px solid #00000030;
+  border-radius: 6px;
+  padding: 10px 14px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 40px;
+  transition: 0.2s ease;
+}
+
+.pagamento-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00000020;
+}
+
+.pagamento-selecionado {
+  border: 2px solid black;
+  transform: scale(1.05);
+}
+
+.pagamento-item img {
+  width: 40px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* BOTÕES */
+.botao-cartao,
+.botao-comprar {
+  font-family: inherit !important;
+}
+
+.botao-cartao {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botao-cartao:hover {
+  background-color: #000;
+}
+
+.botao-selecionado:hover {
+  transform: scale(1.12);
+}
+
+.botao-comprar {
+  width: 100%;
+  padding: 12px;
+  background-color: #00c9ff;
+  color: white;
+  margin-top: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 20px;
+}
+
+.botao-comprar:hover {
+  background-color: #00a9dd;
+}
+
+/* responsividade */
+
+/* notebook 1200px */
+@media (max-width: 1200px) {
+  .descricao {
+    font-size: 22px;
+  }
+
+  .preco {
+    font-size: 26px;
+  }
+}
+
+/* tablet 1024px */
+@media (max-width: 1024px) {
+  .container-compra {
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .pagamentos {
+    gap: 12px;
+  }
+}
+
+/* celualr moderno 600px */
+@media (max-width: 600px) {
+
+  .titulo {
+    font-size: 32px;
+  }
+
+  .descricao {
+    font-size: 18px;
+  }
+
+  .preco {
+    font-size: 22px;
+  }
+
+  .pagamento-item {
+    width: 55px;
+    height: 35px;
+  }
+
+  .quantidade-box {
+    padding: 5px 20px;
+    gap: 14px;
+  }
+
+  .botao-cartao,
+  .botao-comprar {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* celular pequeno 430px */
+@media (max-width: 430px) {
+
+  .titulo {
+    font-size: 28px;
+  }
+
+  .descricao {
+    font-size: 16px;
+  }
+
+  .cores .cor {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pagamento-item {
+    width: 50px;
+    height: 32px;
+  }
+}

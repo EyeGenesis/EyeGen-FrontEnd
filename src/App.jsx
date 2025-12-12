@@ -6,11 +6,12 @@ import Footer from "./components/Footer/Footer.jsx";
 import Chatbot from "./components/Chatbot/Chatbot.jsx";
 import Loader from "./components/Loader/Loader.jsx";
 import Home from "./components/Home/Home.jsx";
+import PaginaEyeGlass from "./components/PaginaEyeGlass/PaginaEyeGlass.jsx";
 import SobreNos from "./components/SobreNos/SobreNos.jsx";
+import Login from "./components/Login/Login.jsx";
 import Planos from "./components/Planos/Planos.jsx";
 import Suporte from "./components/Suporte/Suporte.jsx";
 import EspecProduto from "./components/EspecProduto/EspecProduto.jsx";
-import Login from "./components/Login/Login.jsx";
 import Cadastro from "./components/Cadastro/Cadastro.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/cadastre-se" element={<Cadastro />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/fazer-pedido" element={<PaginaEyeGlass />} />
       </Routes>
 
       <Footer />

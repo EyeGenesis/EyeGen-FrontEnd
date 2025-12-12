@@ -1,15 +1,17 @@
 import React from "react";
-import estilos from "./Design.module.css"; 
+import estilos from "./Design.module.css";
 import { motion } from "framer-motion";
-import imgGrid1 from "../../../assets/img/frame-oculos-carrossel.png"; 
-import videoGrid2 from "../../../assets/img/360-produto.mp4"; 
-import videoGrid3 from "../../../assets/img/design-produto.mp4"; 
-import imgPrincipal from "../../../assets/img/principal-design.png"; 
-import { useLanguage } from "../../../contexto/ContextoLingua"; 
+import imgGrid1 from "../../../assets/img/frame-oculos-carrossel.png";
+import videoGrid2 from "../../../assets/img/360-produto.mp4";
+import videoGrid3 from "../../../assets/img/design-produto.mp4";
+import imgPrincipal from "../../../assets/img/principal-design.png";
+import { useLanguage } from "../../../contexto/ContextoLingua";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 const SecaoDesign = () => {
   const { t } = useLanguage();
-
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -27,8 +29,7 @@ const SecaoDesign = () => {
   return (
     <section className={estilos.secaoDesign}>
       <div className={estilos.container}>
-
-        <motion.div 
+        <motion.div
           className={estilos.containerTexto}
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,8 +40,7 @@ const SecaoDesign = () => {
           <p>{t.comprar.design.texto}</p>
         </motion.div>
 
-
-        <motion.div 
+        <motion.div
           className={estilos.gradeImagens}
           variants={containerVariants}
           initial="hidden"
@@ -74,7 +74,6 @@ const SecaoDesign = () => {
           </motion.div>
         </motion.div>
 
-
         <div className={estilos.containerProduto}>
           <motion.img
             src={imgPrincipal}
@@ -92,17 +91,19 @@ const SecaoDesign = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className={estilos.nomeProduto}>
-              {t.comprar.design.produtoNome} <span>{t.comprar.design.produtoSpan}</span>
+              {t.comprar.design.produtoNome}{" "}
+              <span>{t.comprar.design.produtoSpan}</span>
             </h3>
             <p className={estilos.precoProduto}>{t.comprar.design.preco}</p>
-            <motion.a 
-              href="#" 
+
+            <MotionLink
+              to="/fazer-pedido"
               className={estilos.botaoComprar}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               {t.comprar.design.botao}
-            </motion.a>
+            </MotionLink>
           </motion.div>
         </div>
       </div>
